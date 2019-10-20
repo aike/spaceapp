@@ -89,7 +89,7 @@ body {
 
 .pattern .card_own1 {
   font-size: 14px;
-  margin: 0px auto 4px;
+  margin: 0px auto 6px;
   color: #ccc;
 }
 
@@ -107,7 +107,7 @@ body {
 .pattern .card_desc {
   text-align: left;
   font-size: 15px;
-  height: 55px;
+  height: 40px;
   margin: 5px auto 5px;
 }
 

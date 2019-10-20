@@ -1,5 +1,5 @@
 body {
-  background-image: url(iStock-476890125.jpg);
+  background-image: url(bg.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -21,9 +21,9 @@ body {
 }
 
 .App-header {
-  font-size: 50pt;
+  font-size:25pt;
   color: white;
-  margin-top: 50px;
+  margin-top: 20px;
 /*
   background-color: #282c34;
   min-height: 100vh;
@@ -40,11 +40,25 @@ body {
   color: #09d3ac;
 }
 
+.servicetitle {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  font-size: 18px;
+  color: #cce;
+}
+
+.logo {
+  width: 700px;
+  height: auto;
+  margin-top: 30px;
+}
+
 /* -------------------------------------------- */
 
 .pattern.card {
   overflow: hidden;
-  margin: 200px 50px 200px 50px;
+  margin: 20px 50px 200px 50px;
   cursor : pointer;
 }
 
@@ -53,7 +67,7 @@ body {
   width: calc(33.333% - 60px);
   margin: 0 25px 35px 0;
   background-color: #224;
-  height: 320px;
+  height: 350px;
   border-radius: 5px;
   padding: 20px;
 }
@@ -70,13 +84,33 @@ body {
 
 .pattern .card_ttl {
   font-size: 22px;
+  margin: -5px auto 4px;
+}
+
+.pattern .card_own1 {
+  font-size: 14px;
+  margin: 0px auto 4px;
+  color: #ccc;
+}
+
+.pattern .card_own2 {
+  font-size: 18px;
   margin: -5px auto 10px;
 }
+
 
 .pattern .card_prc {
   font-size: 22px;
   margin: 5px auto 5px;
 }
+
+.pattern .card_desc {
+  text-align: left;
+  font-size: 15px;
+  height: 55px;
+  margin: 5px auto 5px;
+}
+
 
 .pattern .card_btn {
   width: 100px;
@@ -106,7 +140,7 @@ body {
 }
 
 .det_ttl {
-  margin: 4px auto;
+  margin: 15px auto;
   padding: 10px 15px;
   width: 90%;
   color: white;
@@ -127,25 +161,65 @@ body {
   border-radius: 4px;
 }
 
+.det_forsale {
+  margin: 10px auto;
+  padding: 10px;
+  width: 90%;
+  font-weight: bolder;
+  font-size: 40px;
+  color: #f22;
+}
+
 .det_prc {
-  margin: 2em auto;
-  padding: 1em;
+  margin: 15px auto;
+  padding: 15px;
   width: 90%;
   color: white;
   background-color: rgba(0,0,0,0.2);
   border: 1px solid #ccc;
   border-radius: 4px;
+  font-size: 40px;
 }
 
 .det_dsc {
   margin: 2em auto;  
   padding: 1em;
   width: 90%;
+  height: 300px;
   color: white;
   background-color: rgba(0,0,0,0.2);
   border: 1px solid #ccc;
   border-radius: 4px;
 }
 
+.det_back {
+  cursor : pointer;
+  position: absolute;
+  left: 50px;
+  margin: 15px auto;
+  padding: 15px;
+  width: 200px;
+  color: white;
+  background-color: #448;
+  border: 1px solid #224;
+  border-radius: 2px;
+  font-size: 30px;
+  text-align: center;
+}
 
+
+.det_btn {
+  cursor : pointer;
+  position: absolute;
+  left: 350px;
+  margin: 15px auto;
+  padding: 15px;
+  width: 200px;
+  color: white;
+  background-color: #a66;
+  border: 1px solid #844;
+  border-radius: 2px;
+  font-size: 30px;
+  text-align: center;
+}
 

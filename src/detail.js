@@ -20,8 +20,10 @@ class Detail extends React.Component {
 	      </div>
 
 	      <div className="det_right">
+	        <div className="det_forsale">FOR SALE!</div>
 	        <div className="det_prc">{this.props.item.price}</div>
 	        <div className="det_dsc">{this.props.item.desc}</div>
+	        <div className="det_back" onClick={this.props.sel.bind(this, -1)}>BACK</div>
 	        <div className="det_btn">BUY NOW!</div>
 	      </div>
 

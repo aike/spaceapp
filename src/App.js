@@ -10,9 +10,9 @@ class App extends React.Component {
       mode: 'top',
       selected: 1, 
       item: [
-        {title:'Land 1', img:'d01', price:'$199.00', desc:'the term space debris referred to the natural debris found in the Solar System: asteroids'},
-        {title:'Land 2', img:'d02', price:'$99.00', desc:'the term space debris referred to the natural debris found in the Solar System: asteroids'},
-        {title:'Land 3', img:'d03', price:'$99.00', desc:'the term space debris referred to the natural debris found in the Solar System: asteroids'},
+        {title:'Debri-Land 1', own:'John', img:'d01', price:'$199.00', desc:'the term space debris referred to the natural debris found in the Solar System: asteroids'},
+        {title:'Debri-Land 2', own:'Tom', img:'d02', price:'$99.00', desc:'the term space debris referred to the natural debris found in the Solar System: asteroids'},
+        {title:'Debri-Land 3', own:'Alice', img:'d03', price:'$99.00', desc:'the term space debris referred to the natural debris found in the Solar System: asteroids'},
       ]
     };
 /*
@@ -47,7 +47,11 @@ class App extends React.Component {
   }
 
   sel(item) {
-    this.setState({mode:'detail', selected:item});
+    if (item < 0) {
+      this.setState({mode:'top', selected:item});
+    } else {
+      this.setState({mode:'detail', selected:item});      
+    }
   }
 
   render() {
@@ -56,9 +60,8 @@ class App extends React.Component {
       case 'top':
         return(
           <div className="App">
-            <header className="App-header">
-              Buy Your Orbital Land
-            </header>
+            <img className="logo" src="images/logo.jpeg" />
+            <div className="servicetitle">Happy Debriday!</div>
             <div className="card pattern">
               <Card idx={0} item={this.state.item} sel={this.sel.bind(this)} />
               <Card idx={1} item={this.state.item} sel={this.sel.bind(this)} />
@@ -73,7 +76,7 @@ class App extends React.Component {
         break;
 
       case 'detail':
-        return(<Detail item={this.state.item[this.state.selected]} />);
+        return(<Detail item={this.state.item[this.state.selected]} sel={this.sel.bind(this)}/>);
         break;
 
       default:

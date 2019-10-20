@@ -223,3 +223,14 @@ body {
   text-align: center;
 }
 
+.det_congrat {
+  position: absolute;
+  top: 100px;
+  left: auto;
+  width: 100%;
+  padding: 20px 50px;
+  background-color: #e22;
+  border-radius: 2px;
+  font-size: 30px;
+  text-align: center;
+}

@@ -10,9 +10,32 @@ class App extends React.Component {
       mode: 'top',
       selected: 1, 
       item: [
-        {title:'Debri-Land 1', own:'John', img:'d01', price:'$199.00', desc:'the term space debris referred to the natural debris found in the Solar System: asteroids'},
-        {title:'Debri-Land 2', own:'Tom', img:'d02', price:'$99.00', desc:'the term space debris referred to the natural debris found in the Solar System: asteroids'},
-        {title:'Debri-Land 3', own:'Alice', img:'dtori', price:'$99.00', desc:'the term space debris referred to the natural debris found in the Solar System: asteroids'},
+        {title:'Debri-Land 1', own:'John', img:'d01', price:'$199.00', 
+          orgid: 'CCSM-804',
+          part: 'Body cover',
+          scale: '3.9 x 2.2 m',
+          weight: '8,510 kg',
+          manufacturer: 'NASA',
+          desc: 'Marked with U.S. Flag'
+        },
+
+        {title:'Debri-Land 2', own:'Tom', img:'d02', price:'$99.00',
+          orgid: 'CCSM-804',
+          part: 'Engine nozzle',
+          scale: '1.9 x 3.0 m',
+          weight: '1,820 kg',
+          manufacturer: 'NASA',
+          desc: ''
+        },
+
+        {title:'Debri-Land 3', own:'Alice', img:'dtori', price:'$299.00', 
+          orgid: 'SATM-22',
+          part: 'Heat fin',
+          scale: '0.9 x 1.8 m',
+          weight: '640 kg',
+          manufacturer: 'JAXA',
+          desc: 'Fragile'
+        }
       ]
     };
 /*
@@ -23,7 +46,7 @@ class App extends React.Component {
   scale: '3.9 x 2.2 m',
   weight: '8,510 kg',
   manufacturer: 'NASA',
-  comment: 'Marked with U.S. Flag'
+  desc: 'Marked with U.S. Flag'
 },
 {
   id: 2,
@@ -32,7 +55,7 @@ class App extends React.Component {
   scale: '1.9 x 3.0 m',
   weight: '1,820 kg',
   manufacturer: 'NASA',
-  comment: ''
+  desc: ''
 },
 {
   id: 3,
@@ -41,7 +64,7 @@ class App extends React.Component {
   scale: '0.9 x 1.8 m',
   weight: '640 kg',
   manufacturer: 'JAXA',
-  comment: 'Fragile'
+  desc: 'Fragile'
 }
 */
   }

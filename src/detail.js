@@ -32,7 +32,17 @@ class Detail extends React.Component {
 	      <div className="det_right">
 	        <div className="det_forsale">FOR SALE!</div>
 		      <div className="det_prc">{this.props.item.price}</div>
-	        <div className="det_dsc">{this.props.item.desc}</div>
+	        <div className="det_dsc">
+	        Original ID: {this.props.item.orgid}<br />
+	        Part: {this.props.item.part}<br />
+	        Scale: {this.props.item.scale}<br />
+	        Weight: {this.props.item.weight}<br />
+	        Manufacturer: {this.props.item.manufacturer}<br />
+	        Comment: {this.props.item.desc}
+	        </div>
+
+
+
 	        <div className="det_back" onClick={this.props.sel.bind(this, -1)}>BACK</div>
 	        <div className="det_btn" onClick={this.buy.bind(this)}>BUY NOW!</div>
 	      </div>

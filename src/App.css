@@ -198,9 +198,10 @@ body {
   width: 90%;
   height: 300px;
   color: white;
-  background-color: rgba(0,0,0,0.2);
+  background-color: rgba(0,0,0,0.4);
   border: 1px solid #ccc;
   border-radius: 4px;
+  line-height: 150%;
 }
 
 .det_back {

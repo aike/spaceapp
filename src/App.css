@@ -73,7 +73,8 @@ body {
   width: calc(33.333% - 60px); /* ここを */
   width: calc(100%); /* 100% に書き換え */
   margin: 0 25px 35px 0;
-  background-color: #224;
+  background-color: rgba(30,30,60,0.8);
+  border: 1px solid #88a;
   height: 420px;
   border-radius: 5px;
   padding: 20px;

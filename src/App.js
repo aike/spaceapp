@@ -60,7 +60,7 @@ class App extends React.Component {
       case 'top':
         return(
           <div className="App">
-            <img className="logo" src="images/logo.jpeg" />
+            <img className="logo" src="images/logo2.jpeg" />
             <div className="servicetitle">Happy Debriday!</div>
             <div className="card pattern">
               <Card idx={0} item={this.state.item} sel={this.sel.bind(this)} />

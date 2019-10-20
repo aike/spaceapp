@@ -49,72 +49,79 @@ body {
 }
 
 .logo {
-  width: 700px;
+  width: 80%;
   height: auto;
   margin-top: 30px;
+  margin-bottom: 0px;
 }
 
 /* -------------------------------------------- */
 
-.pattern.card {
+.card {
+ background-color: transparent;
+ padding: 50px;
+}
+
+.pattern.mycard {
   overflow: hidden;
   margin: 20px 50px 200px 50px;
   cursor : pointer;
 }
 
-.pattern .card_item {
+.pattern .mycard_item {
   float: left;
-  width: calc(33.333% - 60px);
+  width: calc(33.333% - 60px); /* ここを */
+  width: calc(100%); /* 100% に書き換え */
   margin: 0 25px 35px 0;
   background-color: #224;
-  height: 350px;
+  height: 420px;
   border-radius: 5px;
   padding: 20px;
 }
 
-.pattern .card_item:nth-child(3n) {
+.pattern .mycard_item:nth-child(3n) {
   margin-right: 0;
 }
 
 
-.pattern .card_img {
+.pattern .mycard_img {
   width: 150px;
   height: 150px;
 }
 
-.pattern .card_ttl {
+.pattern .mycard_ttl {
   font-size: 22px;
   margin: -5px auto 4px;
 }
 
-.pattern .card_own1 {
+.pattern .mycard_own1 {
   font-size: 14px;
   margin: 0px auto 6px;
   color: #ccc;
 }
 
-.pattern .card_own2 {
+.pattern .mycard_own2 {
   font-size: 18px;
   margin: -5px auto 10px;
 }
 
 
-.pattern .card_prc {
+.pattern .mycard_prc {
   font-size: 22px;
   margin: 5px auto 5px;
 }
 
-.pattern .card_desc {
+.pattern .mycard_desc {
   text-align: left;
   font-size: 15px;
   height: 40px;
-  margin: 5px auto 5px;
+  margin: 5px 30px;
 }
 
 
-.pattern .card_btn {
-  width: 100px;
-  height: 24px;
+.pattern .mycard_btn {
+  width: 150px;
+  height: 36px;
   font-size: 20px;
   margin: 10px auto;
   padding: 5px;
@@ -155,6 +162,7 @@ body {
   padding: 0;
   width: 100%;
   height: auto;
+  max-width: 400px;
   color: white;
   background-color: rgba(0,0,0,0.2);
   border: 1px solid #ccc;
@@ -165,6 +173,7 @@ body {
   margin: 2em auto;
   padding: 0;
   width: 100%;
+  max-width: 400px;
   height: 300px;
   color: white;
   background-color: rgba(0,0,0,0.2);

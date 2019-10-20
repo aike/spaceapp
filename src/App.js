@@ -57,6 +57,31 @@ class App extends React.Component {
             <img className="logo" src="images/logo2.jpeg" />
             <div className="servicetitle">Happy Debriday!</div>
             <div className="card pattern">
+
+              <div class="row row-offcanvas row-offcanvas-right">
+                <div class="col-xs-12 col-lg-4">
+                  <Card idx={0} item={this.state.item} sel={this.sel.bind(this)} />
+                </div>
+                <div class="col-xs-12 col-lg-4">
+                  <Card idx={1} item={this.state.item} sel={this.sel.bind(this)} />
+                </div>
+                <div class="col-xs-12 col-lg-4">
+                  <Card idx={2} item={this.state.item} sel={this.sel.bind(this)} />
+                </div>
+                <div class="col-xs-12 col-lg-4">
+
+                  <Card idx={0} item={this.state.item} sel={this.sel.bind(this)} />
+                </div>
+                <div class="col-xs-12 col-lg-4">
+                  <Card idx={1} item={this.state.item} sel={this.sel.bind(this)} />
+                </div>
+                <div class="col-xs-12 col-lg-4">
+                  <Card idx={2} item={this.state.item} sel={this.sel.bind(this)} />
+                </div>
+              </div>
+
+{/*
+
               <Card idx={0} item={this.state.item} sel={this.sel.bind(this)} />
               <Card idx={1} item={this.state.item} sel={this.sel.bind(this)} />
               <Card idx={2} item={this.state.item} sel={this.sel.bind(this)} />
@@ -64,6 +89,7 @@ class App extends React.Component {
               <Card idx={0} item={this.state.item} sel={this.sel.bind(this)} />
               <Card idx={1} item={this.state.item} sel={this.sel.bind(this)} />
               <Card idx={2} item={this.state.item} sel={this.sel.bind(this)} />
+*/}
             </div>
           </div>
         );

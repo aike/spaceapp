@@ -1,12 +1,30 @@
+body {
+  background-image: url(/images/iStock-476890125.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #001;
+}
+
 .App {
+  width: 100%;
+  height: 100%;
   text-align: center;
+  color: white;
 }
 
 .App-logo {
-  height: 40vmin;
+  width: 100%;
+  height: auto;
+  color: white;
 }
 
 .App-header {
+  font-size: 50pt;
+  color: white;
+  margin-top: 50px;
+/*
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -15,8 +33,119 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+*/
 }
 
 .App-link {
   color: #09d3ac;
 }
+
+/* -------------------------------------------- */
+
+.pattern.card {
+  overflow: hidden;
+  margin: 200px 50px 200px 50px;
+  cursor : pointer;
+}
+
+.pattern .card_item {
+  float: left;
+  width: calc(33.333% - 60px);
+  margin: 0 25px 35px 0;
+  background-color: #224;
+  height: 320px;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.pattern .card_item:nth-child(3n) {
+  margin-right: 0;
+}
+
+
+.pattern .card_img {
+  width: 150px;
+  height: 150px;
+}
+
+.pattern .card_ttl {
+  font-size: 22px;
+  margin: -5px auto 10px;
+}
+
+.pattern .card_prc {
+  font-size: 22px;
+  margin: 5px auto 5px;
+}
+
+.pattern .card_btn {
+  width: 100px;
+  height: 24px;
+  font-size: 20px;
+  margin: 10px auto;
+  padding: 5px;
+  background-color: #844;
+}
+
+
+/* -------------------------------------------- */
+
+.detail {
+  color: white;
+}
+
+.det_left {
+  margin-left: 30px;
+  float: left;
+  width: 40%;
+}
+
+.det_right {
+  margin-left: 50%;
+  width: 40%;
+}
+
+.det_ttl {
+  margin: 4px auto;
+  padding: 10px 15px;
+  width: 90%;
+  color: white;
+  background-color: rgba(0,0,0,0.2);
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 30px;
+}
+
+.det_img {
+  margin: 2em auto;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  color: white;
+  background-color: rgba(0,0,0,0.2);
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.det_prc {
+  margin: 2em auto;
+  padding: 1em;
+  width: 90%;
+  color: white;
+  background-color: rgba(0,0,0,0.2);
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.det_dsc {
+  margin: 2em auto;  
+  padding: 1em;
+  width: 90%;
+  color: white;
+  background-color: rgba(0,0,0,0.2);
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+
+

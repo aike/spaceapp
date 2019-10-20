@@ -12,7 +12,7 @@ class App extends React.Component {
       item: [
         {title:'Debri-Land 1', own:'John', img:'d01', price:'$199.00', desc:'the term space debris referred to the natural debris found in the Solar System: asteroids'},
         {title:'Debri-Land 2', own:'Tom', img:'d02', price:'$99.00', desc:'the term space debris referred to the natural debris found in the Solar System: asteroids'},
-        {title:'Debri-Land 3', own:'Alice', img:'d03', price:'$99.00', desc:'the term space debris referred to the natural debris found in the Solar System: asteroids'},
+        {title:'Debri-Land 3', own:'Alice', img:'dtori', price:'$99.00', desc:'the term space debris referred to the natural debris found in the Solar System: asteroids'},
       ]
     };
 /*
@@ -76,7 +76,7 @@ class App extends React.Component {
         break;
 
       case 'detail':
-        return(<Detail item={this.state.item[this.state.selected]} sel={this.sel.bind(this)}/>);
+        return(<Detail idx={this.state.selected} item={this.state.item[this.state.selected]} sel={this.sel.bind(this)}/>);
         break;
 
       default:

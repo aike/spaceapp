@@ -14,7 +14,10 @@ class Card extends React.Component {
           <div className="mycard_own2">{item.own}</div>
 	        <img className="mycard_img" src={'images/' + item.img + '.png'} />
           <div className="mycard_prc">{item.price}</div>
-          <div className="mycard_desc">{item.desc}</div>
+          <div className="mycard_desc">
+		        Part: {item.part}<br />
+            Desc: {item.desc}
+          </div>
           <div className="mycard_btn">BUY NOW!</div>
         </div>
 		);
